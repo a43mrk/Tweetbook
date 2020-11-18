@@ -48,6 +48,8 @@ namespace Tweetbook
                 app.UseHsts();
             }
 
+            app.UseAuthentication();
+
             // Swagger configuration
             var swaggerOptions = new SwaggerOptions();
             Configuration.GetSection(nameof(SwaggerOptions)).Bind(swaggerOptions);

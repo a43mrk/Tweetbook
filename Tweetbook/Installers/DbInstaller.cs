@@ -20,7 +20,6 @@ namespace Tweetbook.Installers
 
             // register PostService
             services.AddScoped<IPostService, PostService>();
-            // services.AddScoped<IPostService, CosmosPostService>();
         }
     }
 }
